@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../resources/css/normalize.css">
+    <link rel="stylesheet" href="../resources/css/style.css">
+    <link href="https://aa-line-icons.gitlab.io/i/icons.css" rel="stylesheet" crossorigin>
+    <title>about me</title>
+</head>
+<body>
+    <header>
+        <div class="button" id="home-button">
+            <img src="../resources/img/bunnyhome.gif" alt="">
+			<a href="./home.html">Home</a>
+		</div>
+        <div class="music-player" onclick="playMusic()">
+			<audio src="https://file.garden/aL2Xk6tqfwJhLlie/Ichiko%20Aoba%20Asleep%20Among%20Endives.mp3" id="music" preload="none" loop></audio>
+			<i class="aa-line-icons" icon-name="music-2"></i>
+			<p>Asleep Among Endives<br> - Ichiko Aoba</p>
+		</div>
+        <div class="center">
+            <h1>˗ˏˋ theatre ˊˎ˗</h1>
+        </div>
+	</header>
+    <div class="center">
+        <main>
+            <p>Here are some songs from musicals that I love that makes me feel like I'm dreaming!</p>
+            <br>
+            <h3>A Soft Place to Land - Waitress</h3>
+            <hr>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/q9pFS1zRxmI?si=zzCzrN6rJwdD-Tzb"
+            frameborder="0" allow="encrypted-media" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <p>Waitress has so many beautiful songs, but this song in particular makes me feel like I'm floating in a dream 
+                and don't want to wake up. It is an underrated gem out of the Waitress songs.
+            </p>
+            <br>
+            <h3>In A Crowd of Thousands - Anastasia</h3>
+            <hr>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/g5Mqjsbfzgw?si=ZY3sWT3a9IUrQzcE"
+            frameborder="0" gesture="media" allow="encrypted-media" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <p>Coming at nearly the end of the musical, this duet is almost magical in the way it makes its revelation.
+                Incidentally, Anastasia is coming to Sydney next January, so if you're interested, you should come see!
+            </p>
+            <br>
+            <h3>A Dream is A Wish Your Heart Makes - Cinderella</h3>
+            <hr>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/MetrHTat0WI?si=p0hbp45ylKzvspEj"
+            frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+            <p>I can't resist adding this footage of Ilene Woods, the original voice actress for Cinderella
+                singing her iconic song here. Her voice has a lovely warmth at the lower tones, which is very rare
+                for a soprano and something I admittedly am envious of.
+            </p>
+            <br>
+            <div class="center">
+                <a href="https://youtube.com/playlist?list=PLHmnCdfsGnaN4wNuHsPmbtqEM-IHCZLZe&si=D1J-HLL3cO8hJ0ZS">
+                Click here to see a playlist of my favourite performances!</a>
+            </div>
+        </main>
+    </div>
+</body>
+<script>
+	var track = document.getElementById("music");
+
+	function playMusic() {
+		if (track.paused) {
+			track.play();
+		} else {
+			track.pause();
+		}
+	}
+</script>
+</html>

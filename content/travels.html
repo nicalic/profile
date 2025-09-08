@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../resources/css/normalize.css">
+    <link rel="stylesheet" href="../resources/css/style.css">
+    <link href="https://aa-line-icons.gitlab.io/i/icons.css" rel="stylesheet" crossorigin>
+    <title>about me</title>
+</head>
+<body>
+    <header>
+        <div class="button" id="home-button">
+            <img src="../resources/img/bunnyhome.gif" alt="">
+			<a href="./home.html">Home</a>
+		</div>
+        <div class="music-player" onclick="playMusic()">
+			<audio src="https://file.garden/aL2Xk6tqfwJhLlie/Ichiko%20Aoba%20Asleep%20Among%20Endives.mp3" id="music" preload="none" loop></audio>
+			<i class="aa-line-icons" icon-name="music-2"></i>
+			<p>Asleep Among Endives<br> - Ichiko Aoba</p>
+		</div>
+        <div class="center">
+            <h1>˗ˏˋ travels ˊˎ˗</h1>
+        </div>
+	</header>
+    <div class="center">
+        <main>
+            <p>
+                This is my travel bucket list! I had travelled a lot during my gap year, but there are still a lot
+                more places I'd like to explore!
+            </p>
+            <br>
+            <h3>Patagonia</h3>
+            <hr>
+            <p>I love hiking, so Patagonia is my dream destination! I'd like to hike the <strong>W trek</strong> and trails near <strong>El Chalten</strong>,
+                go see the <strong>Glacier Perito Moreno</strong>, and visit <strong>Ushuaia</strong> at the end of the world.
+            </p>
+            <div class="two-columns">
+                <div class="gallery">
+                    <img src="https://file.garden/aL2Xk6tqfwJhLlie/vertical-shot-winding-river-with-majestic-mountains-blue-sky.jpg" alt="vertical-shot-winding-river-with-majestic-mountains-blue-sky">
+                    <img src="https://file.garden/aL2Xk6tqfwJhLlie/agus-buscaglia-zBVhMwd7g_A-unsplash.jpg" alt="Penguins on green grass fields during day time">
+                    <img src="https://file.garden/aL2Xk6tqfwJhLlie/snowscat-H3oXiq7_bII-unsplash.jpg" alt="Mountains with lake in front">
+                    <img src="https://file.garden/aL2Xk6tqfwJhLlie/pexels-andre-ulysses-de-salis-2100065-3739624.jpg" alt="Wild horses racing in the grass field">
+                    <img src="https://file.garden/aL2Xk6tqfwJhLlie/hans-jurgen-weinhardt-5RFMPufTKPA-unsplash.jpg" alt="Giant glacier">
+                    <img src="https://file.garden/aL2Xk6tqfwJhLlie/guanaco-lama-guanicoe-torres-del-paine-national-park.jpg" alt="Guanaco llama in the Torres Del Paine">
+                    <img src="https://file.garden/aL2Xk6tqfwJhLlie/pexels-luisdalvan-1684166.jpg" alt="Mountains with lake in front">
+                </div>
+            </div>
+            <h3>Galapagos Islands</h3>
+            <hr>
+            <p>
+                I first learned about the Galapagos Islands because of <strong>Darwin</strong>'s observations here that led him to propose the <strong></strong>theory of evolution</strong>,
+                and it fascinated me how vastly the ecosystem can differ from island to island. There are many species on Galapagos that are <strong>
+                    not found
+                    anywhere else on Earth
+                </strong>. Visit their <a href="https://www.galapagos.org/about_galapagos/biodiversity/">official website</a> for a more detailed explanation!
+            </p>
+            <div class="two-columns">
+                <div class="gallery">
+                    <img src="https://file.garden/aL2Xk6tqfwJhLlie/pexels-magda-ehlers-pexels-1201431.jpg" alt="Galapagos Tortoise">
+                    <img src="https://file.garden/aL2Xk6tqfwJhLlie/darius-wiles-T1kI3pUw5YY-unsplash.jpg" alt="Galapagos Penguin">
+                    <img src="https://file.garden/aL2Xk6tqfwJhLlie/simon-berger-qOmxP7W8svM-unsplash.jpg" alt="Yellow Iguana">
+                    <img src="https://file.garden/aL2Xk6tqfwJhLlie/pexels-diego-f-parra-33199-18472848.jpg" alt="Galapagos Sea Lion">
+                    <img src="https://file.garden/aL2Xk6tqfwJhLlie/rod-long-CkwqazrTIwU-unsplash.jpg" alt="Sally Lightfoot Crab">
+                    <img src="https://file.garden/aL2Xk6tqfwJhLlie/andy-brunner-Wd9fzw-Gztc-unsplash.jpg" alt="Blue-footed Booby">
+                    <img src="https://file.garden/aL2Xk6tqfwJhLlie/dustin-haney-s6B6mlgqIjk-unsplash.jpg" alt="Green Sea Turtle">
+                    <img src="https://file.garden/aL2Xk6tqfwJhLlie/mackenzie-cruz-dI4Bd2BZl-U-unsplash.jpg" alt="Galapagos Fur Seal">
+                    <img src="https://file.garden/aL2Xk6tqfwJhLlie/pexels-pixabay-33669.jpg" alt="Frigatebird">
+                </div>
+            </div>
+            <strong>Where else do you think should be included on my bucket list? I'd love to know what you think!</strong>
+            <a href="mailto:coleyblossoms@gmail.com"><img src="../resources/img/gotmail.gif" alt="Mail me"></a>
+            <details>
+                <summary>Credits</summary>
+                All images courtesy of Unsplashed, Pexels and Pixabay.
+            </details>
+        </main>
+    </div>
+</body>
+<script>
+	var track = document.getElementById("music");
+
+	function playMusic() {
+		if (track.paused) {
+			track.play();
+		} else {
+			track.pause();
+		}
+	}
+</script>
+</html>

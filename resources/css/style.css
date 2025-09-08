@@ -1,0 +1,245 @@
+@font-face { 
+    font-family: ktegaki; 
+    src: url("../fonts/KTEGAKI.ttf")format("truetype"); 
+}
+
+/* CSS Reset */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+}
+
+/* General style */
+
+html {
+    font-size: 22px;
+    line-height: 1.25;
+}
+
+body {
+    background-image: url("../img/HMCBG.jpg");
+    font-family: ktegaki, sans-serif;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-block: 1rem;
+}
+
+strong {
+    color: #D26C9E;
+}
+
+a {
+    color: #E9B646;
+    text-decoration: none;
+    transition: color 200ms ease-out;
+}
+
+a:hover {
+    color: #DFAA36;
+}
+
+details {
+    text-align: center;
+}
+
+hr {
+    border: 2px double #6eaad6;
+    width: 100%;
+    margin: 10px auto;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button {
+    margin: 10px;
+    padding: 3px 15px;
+    background-color: seashell;
+    border: 2px solid #6EAAD6;
+    border-radius: 10%;
+    text-align: center;
+}
+
+.button:hover {
+    transform: translateY(3px);
+}
+
+.button a {
+    color: #6EAAD6;
+    text-decoration: none;
+    transition: color ease-out linear;
+}
+
+/* Smooth page transitions */
+
+@view-transition {
+    navigation: auto;
+}
+
+/* Header style */
+
+header #home-button {
+    position: fixed;
+    top: 0;
+    left: 5px;
+}
+
+header .music-player {
+    position: fixed;
+    top: 0;
+    right: 0;
+    margin: 15px 25px;
+    color: #6EAAD6;
+    display: flex;
+    text-align: right;
+}
+
+.aa-line-icons {
+    font-size: 1rem;
+    margin-right: 16px;
+}
+
+header h1 {
+    color: seashell/*hsl(36, 70%, 92%)*/;    
+    text-shadow: 4px 0 0 #6EAAD6,
+                0 4px 0 #6EAAD6,
+                -4px 0 0 #6EAAD6,
+                0 -4px 0 #6EAAD6,
+                0 2px 2px #CEEAFF,
+                2px 0 2px #CEEAFF;
+}
+
+
+/* Image container style for home.html */
+
+.img-container {
+    position: fixed;
+    display: inline-block;
+    text-align: center;
+    animation: slideIn 1s;
+    transition: transform 0.5s ease;
+}
+
+.img-container a {
+    color: seashell;    
+    text-shadow: 2px 0 0 #6EAAD6,
+                0 2px 0 #6EAAD6,
+                -2px 0 0 #6EAAD6,
+                0 -2px 0 #6EAAD6,
+                0 1px 1px #CEEAFF,
+                1px 0 1px #CEEAFF;
+    text-decoration: none;
+}
+
+.img-container:hover {
+    transform: scale(1.15);
+}
+
+.img-container h2 {
+    margin-block: 0;
+}
+
+/* Slids in on page load */
+
+@keyframes slideIn {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideOut {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
+
+/* Positions of different containers */
+
+#about {
+    top: 220px;
+    left: 600px;
+}
+
+#musicals {
+    top: 300px;
+    left: 1100px;
+}
+
+#travels {
+    top: 100px;
+    left: 200px;
+}
+
+#dreams {
+    top: 530px;
+    left: 350px;
+}
+
+/* Main container style */
+
+main {
+    background-color: #fbfbfbd2;
+    max-width: 900px;
+    max-height: 600px;  
+    border: 5px double #6eaad6;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    box-shadow: #21569760 5px 5px;
+    color: #4B7BBA;
+    overflow-y: scroll;
+}
+
+main iframe {
+    display: block;
+    margin: 1rem auto;
+}
+
+/* Two columns style */
+
+.two-columns {
+    margin: 1rem;
+    column-count: 2;
+    column-width: 150px;
+    gap: 1rem;
+}
+
+#about-me {
+    margin-block: 0;
+}
+
+.two-columns ul {
+    margin: 0 20px;
+    padding: 1rem;
+    list-style-image: url("../img/flower.png");
+}
+
+.two-columns li {
+    padding-left: 5px;
+    margin: 10px 0;
+}
+
+/* Image gallery style */
+
+.two-columns img {
+    display: block;
+    margin-block: 1rem;
+    max-width: 100%;
+    border-radius: 1rem;
+}

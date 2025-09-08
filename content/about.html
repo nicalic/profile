@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../resources/css/normalize.css">
+    <link rel="stylesheet" href="../resources/css/style.css">
+    <link href="https://aa-line-icons.gitlab.io/i/icons.css" rel="stylesheet" crossorigin>
+    <title>about me</title>
+</head>
+<body>
+    <header>
+        <div class="button" id="home-button">
+            <img src="../resources/img/bunnyhome.gif" alt="">
+			<a href="./home.html">Home</a>
+		</div>
+        <div class="music-player" onclick="playMusic()">
+			<audio src="https://file.garden/aL2Xk6tqfwJhLlie/Ichiko%20Aoba%20Asleep%20Among%20Endives.mp3" id="music" preload="none" loop></audio>
+			<i class="aa-line-icons" icon-name="music-2"></i>
+			<p>Asleep Among Endives<br> - Ichiko Aoba</p>
+		</div>
+        <div class="center">
+            <h1>˗ˏˋ about ˊˎ˗</h1>
+        </div>
+	</header>
+    <div class="center">
+        <main>
+            <div class="center">
+                <img src="https://file.garden/aL2Xk6tqfwJhLlie/endure_me.png" alt="Girl, all I do is endure" id="miffy">
+            </div>
+            <div class="two-columns" id="about-me">
+                <ul>
+                    <li>Name: <strong>Nicole</strong></li>
+                    <li>Pronouns: <strong>she/her</strong></li>
+                    <li>Studies: <strong>Adv. Comp Sci</strong></li>
+                </ul>
+                <ul>
+                    <li>Age: <strong>20</strong></li>
+                    <li>From: <strong>New Zealand</strong></li>
+                    <li>Speaks: <strong>English, Mandarin, Cantonese, German (ein bisschen!)</strong></li>
+                </ul>
+            </div>
+            <p>Hello! I'm Nicole and I'm a first year student studying advanced computer science at UNSW.
+            In my spare time, I like to go <a href="./travels.html">travel</a> and do <a href="./musicals.html">musical theatre</a>. I have a section dedicated 
+            to each in my website, so please check them out! I also enjoy reading and researching random topics, mostly about 
+            history and religion. The <a href="./dreams.html">dream novel</a> section is my creative interpretation of <strong>Carl Jung's The Red Book</strong>, a notebook he 
+            kept where he detailed his dreams over the years. These dreams influenced his theories on archetypes and the human 
+            psyche, which I've made a homage to in my website!</p>
+            <br>
+            <details>
+                <summary>Here are some about me(mes)</summary>
+                <img src="https://file.garden/aL2Xk6tqfwJhLlie/127pm.jpg" 
+                alt="Reductress headline: Wow! This woman doesn't set an alarm because her body can just sense when it's 1:27pm"
+                loading="lazy">
+                <img src="https://file.garden/aL2Xk6tqfwJhLlie/workpressure.webp" 
+                alt="I don't work better under pressure, it's just the only time I'll work."
+                loading="lazy">
+                <img src="https://file.garden/aL2Xk6tqfwJhLlie/me-right-now-at-1am-because-i-have-no-self-control.jpg" 
+                alt="one of my favourite hobbies is staying up extremely late to read and pretending I won't regret it"
+                loading="lazy">
+            </details>
+            <br>
+        </main>
+    </div>
+</body>
+<script>
+	var track = document.getElementById("music");
+
+	function playMusic() {
+		if (track.paused) {
+			track.play();
+		} else {
+			track.pause();
+		}
+	}
+</script>
+</html>
