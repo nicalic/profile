@@ -1,6 +1,6 @@
 @font-face { 
     font-family: ktegaki; 
-    src: url("fonts/KTEGAKI.ttf")format("truetype"); 
+    src: url("../fonts/KTEGAKI.ttf")format("truetype"); 
 }
 
 /* CSS Reset */
@@ -19,7 +19,7 @@ html {
 }
 
 body {
-    background-image: url("img/HMCBG.jpg");
+    background-image: url("../img/HMCBG.jpg");
     font-family: ktegaki, sans-serif;
 }
 
@@ -227,7 +227,7 @@ main iframe {
 .two-columns ul {
     margin: 0 20px;
     padding: 1rem;
-    list-style-image: url("img/flower.png");
+    list-style-image: url("../img/flower.png");
 }
 
 .two-columns li {
