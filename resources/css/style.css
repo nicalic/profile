@@ -111,7 +111,8 @@ header .music-player {
 }
 
 header h1 {
-    color: seashell/*hsl(36, 70%, 92%)*/;    
+    margin-block: 40px;
+    color: seashell;    
     text-shadow: 4px 0 0 #6EAAD6,
                 0 4px 0 #6EAAD6,
                 -4px 0 0 #6EAAD6,
